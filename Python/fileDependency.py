@@ -13,8 +13,9 @@ class fileDependency():
 		self.outputModTime = os.path.getmtime(outputFile) # modification time of the output file
 		if self.inputModTime > self.outputModTime:
 			# output file is not up-to-date, recalculate outputFile from inputFile
-			proc	 
-			
+			print "Target file is not up-to-date. Updating..."
+			result = proc	 
+		return result
 
 	
 	
